@@ -42,7 +42,7 @@ order by trabajador.nombre;
 
 select establo.nombre, trabajador.nombre
 from establo
-right join trabajador on establo.Idestabloes = trabajador.Idtrabajador
+right join trabajador on establo.Idestablo = trabajador.Idtrabajador
 order by establo.nombre 
 
 select * from persona
@@ -51,6 +51,6 @@ union
 select * from persona
 right join trabajador on persona.Idpersona = trabajador.Idtrabajador
 
-select establo.Idestabloes, establo.nombre
+select establo.Idestablo, establo.nombre
 from establo
 cross join ubicacion;
